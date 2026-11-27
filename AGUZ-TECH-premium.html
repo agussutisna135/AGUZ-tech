@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="AGUZ TECH membantu mewujudkan website, aplikasi web, aplikasi Android, dan solusi digital sesuai kebutuhan Anda.">
+<meta name="theme-color" content="#061b59">
+<title>AGUZ TECH | Solusi Digital untuk Masa Depan</title>
+<style>
+:root{--navy:#061b59;--blue:#0758ed;--cyan:#12b7f4;--ink:#071747;--muted:#53617f;--pale:#f1f5ff;--line:#d8e3ff;--green:#08c76a}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:#f6f8ff}a{text-decoration:none;color:inherit}.wrap{width:min(1440px,94%);margin:auto}
+header{height:70px;background:#fff;display:flex;align-items:center;position:sticky;top:0;z-index:20;box-shadow:0 2px 14px #061b5910}.nav{display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:12px;font-weight:800;font-size:25px;color:#071747;white-space:nowrap}.logo{width:48px;height:48px;background:linear-gradient(140deg,#08baf7,#0752e8);clip-path:polygon(50% 0,100% 100%,72% 100%,50% 45%,28% 100%,0 100%);position:relative}.brand small{display:block;font-size:11px;font-weight:500;margin-top:3px}.links{display:flex;gap:26px;align-items:center;font-size:14px;font-weight:700}.links a:hover{color:var(--blue)}.nav-actions{display:flex;align-items:center;gap:12px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 22px;border-radius:28px;background:linear-gradient(100deg,#08a9f5,#0753ed);color:white;font-weight:700;border:0;cursor:pointer;box-shadow:0 6px 16px #0753ed22}.btn.outline{background:transparent;border:1.5px solid #fff;color:#fff;box-shadow:none}.btn.green{background:linear-gradient(100deg,#05c879,#009b62)}.menu{display:none;background:none;border:0;font-size:26px;color:var(--ink)}
+.hero{background:radial-gradient(ellipse at 70% 50%,#0876ed 0,#063caa 37%,#061a55 78%);color:white;overflow:hidden;position:relative}.hero:after{content:"";position:absolute;inset:0;background:repeating-linear-gradient(135deg,transparent 0 80px,#ffffff08 82px 85px);pointer-events:none}.hero-inner{min-height:300px;display:grid;grid-template-columns:1fr 1.1fr .45fr;align-items:center;gap:20px;position:relative;z-index:1;padding:28px 0}.hero h1{font-size:clamp(30px,3.4vw,49px);line-height:1.08;margin:0 0 12px;letter-spacing:-1.3px}.hero h1 span{color:#20d2f6}.hero p{font-size:18px;line-height:1.4;margin:0 0 18px}.hero-art{height:250px;display:flex;align-items:center;justify-content:center;position:relative}.laptop{width:min(100%,510px);height:210px;border:9px solid #17284d;border-bottom-width:17px;border-radius:16px;background:linear-gradient(135deg,#fff,#d9e8ff);box-shadow:0 25px 35px #0007;transform:perspective(700px) rotateY(-8deg);padding:15px;color:#08215d;position:relative}.laptop:after{content:"";position:absolute;bottom:-28px;left:-7%;width:114%;height:13px;background:linear-gradient(#d8e4f6,#526b98);border-radius:3px 3px 12px 12px}.screen-top{font-weight:800;color:#0754dc;border-bottom:1px solid #d5e0f7;padding-bottom:8px}.screen-title{font-size:25px;font-weight:800;margin:22px 0 8px}.screen-chip{display:inline-block;background:#0758ed;color:white;padding:8px 13px;border-radius:15px;font-size:11px}.phone{position:absolute;right:3%;bottom:3px;width:92px;height:174px;border:7px solid #111d3b;border-radius:20px;background:linear-gradient(160deg,#fff,#dceaff);box-shadow:0 15px 25px #0008;display:flex;align-items:center;justify-content:center;color:#0758ed;font-size:30px;font-weight:900}.hero-points{font-size:15px;line-height:2.6;white-space:nowrap}.hero-points b{color:#19e68c;margin-right:7px}
+.services{background:#fff;border-radius:20px;box-shadow:0 8px 25px #173d8c12;display:grid;grid-template-columns:repeat(6,1fr);margin:-1px auto 25px;position:relative;z-index:2;padding:15px 8px}.service{text-align:center;padding:4px 10px;border-right:1px solid var(--line);font-weight:700;font-size:14px;line-height:1.35}.service:last-child{border:0}.service i{display:block;font-style:normal;font-size:28px;margin-bottom:6px;color:var(--blue)}
+.section-head{text-align:center;margin:24px 0 14px}.eyebrow{display:inline-block;background:#0879f5;color:white;border-radius:18px;padding:5px 18px;font-size:13px;font-weight:700}.section-head h2{font-size:25px;margin:7px 0 3px}.section-head p{margin:0;color:var(--muted)}
+.pricing{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:0 auto 24px}.price-card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:20px 24px 12px;box-shadow:0 5px 15px #143a8c0c;position:relative}.price-card.popular{border:2px solid var(--blue)}.popular-tag{position:absolute;top:-13px;left:50%;transform:translateX(-50%);background:#0758ed;color:white;border-radius:15px;padding:5px 17px;font-size:12px;font-weight:700;white-space:nowrap}.price-top{display:flex;gap:17px;align-items:center}.price-icon{width:76px;height:76px;border-radius:50%;background:#e8f0ff;display:grid;place-items:center;font-size:37px;color:var(--blue);flex-shrink:0}.price-card h3{margin:0 0 3px;font-size:19px}.price-card p{margin:0;color:var(--muted);font-size:14px}.amount{font-size:28px;font-weight:800;margin:10px 0 7px}.amount small{font-size:14px}.checks{list-style:none;padding:0;margin:7px 0 12px;font-size:13px;line-height:1.7}.checks li:before{content:"✓";color:var(--blue);font-weight:900;margin-right:9px}.price-card .btn{width:100%;padding:10px;border-radius:11px;font-size:13px}.price-card .btn.light{background:white;border:1px solid var(--blue);color:var(--blue);box-shadow:none}
+.general{display:grid;grid-template-columns:1fr 270px;gap:14px;margin:22px auto 24px}.general-title{display:flex;align-items:center;gap:14px;margin-bottom:12px}.general-title .eyebrow{white-space:nowrap}.general-title h2{font-size:21px;margin:0}.general-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.general-card{background:#fff;border:1px solid var(--line);border-radius:15px;overflow:hidden;box-shadow:0 5px 16px #173d8c0d}.general-visual{height:115px;background:linear-gradient(135deg,#e9f2ff,#d6eaff);display:flex;align-items:center;justify-content:center;font-size:55px}.general-content{padding:12px 14px}.general-content h3{font-size:17px;margin:0 0 5px}.general-content p{font-size:13px;color:var(--muted);margin:0 0 12px;line-height:1.4}.general-content .btn{width:100%;padding:9px;border-radius:10px;font-size:13px}.why{background:#edf3ff;border:1px solid var(--line);border-radius:17px;padding:18px}.why h3{margin:0 0 12px;font-size:17px}.why p{font-size:13px;margin:9px 0}.why p:before{content:"✓";color:#08bd68;font-weight:900;margin-right:8px}
+
+/* Bagian proses kerja pengganti Aplikasi Umum */
+.process-wrap{display:grid;grid-template-columns:minmax(0,1fr) 270px;gap:14px;margin:22px auto 24px;align-items:stretch}
+.process-main{min-width:0}
+.process-main .section-head{margin:4px 0 16px}
+.process-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.process-card{position:relative;background:#fff;border:1px solid var(--line);border-radius:15px;padding:18px;box-shadow:0 5px 16px #173d8c0d;min-height:190px}
+.process-number{position:absolute;right:15px;top:12px;color:#d6e3ff;font-size:30px;font-weight:800}
+.process-icon{width:48px;height:48px;display:grid;place-items:center;border-radius:13px;background:#eaf2ff;font-size:25px;margin-bottom:12px}
+.process-card h3{font-size:17px;margin:0 0 7px}
+.process-card p{font-size:13px;color:var(--muted);line-height:1.55;margin:0}
+.process-cta{margin-top:13px;padding:16px 18px;background:#edf4ff;border:1px solid var(--line);border-radius:14px;display:flex;align-items:center;justify-content:space-between;gap:14px}
+.process-cta strong,.process-cta span{display:block}
+.process-cta strong{font-size:15px;margin-bottom:4px}
+.process-cta span{font-size:13px;color:var(--muted)}
+.process-cta .btn{white-space:nowrap}
+@media(max-width:900px){.process-wrap{grid-template-columns:1fr}.process-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:650px){.process-grid{grid-template-columns:1fr}.process-card{min-height:0}.process-cta{align-items:stretch;flex-direction:column}.process-cta .btn{width:100%}}
+
+footer{background:#06184e;color:white;padding:30px 0 18px}.footer-inner{display:flex;flex-direction:column;align-items:center;text-align:center;gap:20px}.footer-brand{display:flex;align-items:center;justify-content:center;gap:12px;font-size:21px;font-weight:800}.footer-brand .logo{width:44px;height:44px}.footer-links{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:12px 24px;font-size:14px;font-weight:600}.footer-links a{color:#fff;opacity:.94}.footer-links a:hover{color:#52c7ff}.social{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px}.social .wa-number{font-size:14px;font-weight:700;white-space:nowrap}.social .btn{padding:11px 22px;border-radius:24px;font-size:14px}.copyright{border-top:1px solid #294477;margin-top:22px;padding-top:15px;text-align:center;color:#bdcbed;font-size:12px}
+.modal{display:none;position:fixed;inset:0;background:#04143dcc;z-index:50;align-items:center;justify-content:center;padding:18px}.modal.show{display:flex}.modal-box{width:min(480px,100%);background:#fff;border-radius:18px;padding:24px;position:relative}.modal-box h2{margin:0 0 6px}.modal-box p{color:var(--muted);font-size:14px}.close{position:absolute;right:16px;top:12px;border:0;background:none;font-size:25px;cursor:pointer}.field{margin:12px 0}.field label{display:block;font-size:13px;font-weight:700;margin-bottom:5px}.field input,.field select,.field textarea{width:100%;padding:12px;border:1px solid #ccd8f2;border-radius:9px;font:inherit}.field textarea{min-height:80px;resize:vertical}.modal-box .btn{width:100%}
+@media(max-width:900px){.links{gap:12px;font-size:12px}.hero-inner{grid-template-columns:1fr 1fr}.hero-points{display:none}.services{grid-template-columns:repeat(3,1fr);row-gap:12px}.service:nth-child(3){border:0}.general{grid-template-columns:1fr}.why{display:grid;grid-template-columns:repeat(2,1fr)}.why h3{grid-column:1/-1}}
+@media(max-width:650px){header{height:62px}.brand{font-size:19px}.brand small{font-size:9px}.logo{width:38px;height:38px}.links,.nav-actions .search{display:none}.menu{display:block}.links.open{display:flex;position:absolute;top:62px;left:0;right:0;background:white;padding:18px;flex-direction:column;align-items:flex-start;box-shadow:0 8px 15px #0002}.nav-actions .btn{padding:10px 13px;font-size:12px}.hero-inner{grid-template-columns:1fr;padding:30px 0 20px;gap:0}.hero h1{font-size:34px}.hero p{font-size:15px}.hero-art{height:175px}.laptop{height:145px;width:85%;padding:10px}.screen-title{font-size:18px;margin:10px 0 5px}.phone{height:130px;width:70px;font-size:23px}.services{grid-template-columns:repeat(2,1fr);margin-bottom:18px}.service{font-size:12px}.service:nth-child(2n){border:0}.service:nth-child(3){border-right:1px solid var(--line)}.section-head h2{font-size:21px}.pricing{grid-template-columns:1fr;gap:18px}.price-card{padding:20px}.general-title{align-items:flex-start;flex-direction:column;gap:8px}.general-title h2{font-size:20px}.general-cards{grid-template-columns:1fr}.general-card{display:grid;grid-template-columns:115px 1fr}.general-visual{height:100%;min-height:145px;font-size:43px}.general-content{padding:12px}.why{grid-template-columns:1fr 1fr}.footer-inner{flex-direction:column;text-align:center}.footer-links{flex-wrap:wrap;justify-content:center;gap:12px 18px}.social{flex-direction:column;justify-content:center;gap:12px}.social .wa-number{white-space:normal}.footer-brand{font-size:19px}.copyright{font-size:11px}}
+
+/* Galeri demo solusi digital */
+.demo-section{margin:28px auto 26px}
+.demo-intro{text-align:center;max-width:780px;margin:0 auto 20px}
+.demo-intro h2{font-size:clamp(23px,3vw,30px);margin:9px 0 8px}
+.demo-intro p{color:var(--muted);line-height:1.65;margin:0}
+.demo-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.demo-card{background:#fff;border:1px solid var(--line);border-radius:17px;overflow:hidden;box-shadow:0 6px 18px #173d8c0c;display:flex;flex-direction:column}
+.demo-art{min-height:138px;display:grid;place-items:center;background:linear-gradient(135deg,#eaf3ff,#d9e9ff);position:relative;overflow:hidden}
+.demo-art:before,.demo-art:after{content:"";position:absolute;border:1px solid #0758ed18;border-radius:50%;width:190px;height:190px}
+.demo-art:after{width:125px;height:125px}
+.demo-art span{font-size:58px;z-index:1;filter:drop-shadow(0 7px 8px #183b7a20)}
+.demo-content{padding:17px;display:flex;flex-direction:column;flex:1}
+.demo-content h3{font-size:17px;margin:0 0 7px}
+.demo-content p{font-size:13px;line-height:1.55;color:var(--muted);margin:0 0 15px;flex:1}
+.demo-content .btn{width:100%;padding:10px 13px;border-radius:10px;font-size:13px}
+.demo-note{margin:16px auto 0;padding:13px 16px;border:1px solid var(--line);background:#edf4ff;border-radius:12px;color:var(--muted);font-size:13px;line-height:1.55;text-align:center}
+@media(max-width:900px){.demo-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:650px){.demo-grid{grid-template-columns:1fr}.demo-card{display:grid;grid-template-columns:108px minmax(0,1fr)}.demo-art{min-height:100%;}.demo-art span{font-size:42px}.demo-content{padding:13px}.demo-content h3{font-size:15px}.demo-content p{font-size:12px;margin-bottom:10px}.demo-content .btn{font-size:12px;padding:9px 7px}}
+
+
+/* Penyempurnaan paket, navigasi, galeri, dan simulasi demo */
+html{scroll-padding-top:82px}
+section[id],footer[id]{scroll-margin-top:78px}
+.nav{min-height:70px}
+.nav .links a{white-space:nowrap}
+.amount-label{font-size:20px;color:var(--blue);letter-spacing:-.3px}
+.pricing-note{max-width:900px;margin:0 auto 28px;text-align:center;color:var(--muted);font-size:13px;line-height:1.6;background:#edf4ff;border:1px solid var(--line);border-radius:12px;padding:14px 18px}
+.demo-tabs{display:flex;justify-content:center;flex-wrap:wrap;gap:8px;margin:0 auto 18px}
+.demo-tab{border:1px solid var(--line);background:#fff;color:var(--ink);border-radius:22px;padding:9px 15px;font:700 13px Arial;cursor:pointer}
+.demo-tab.active{background:var(--blue);border-color:var(--blue);color:#fff}
+.demo-card[hidden]{display:none!important}
+.demo-art{position:relative;display:flex;flex-direction:column;gap:5px}
+.demo-art small{z-index:1;font-size:9px;letter-spacing:1px;font-weight:800;color:#47628e}
+.video-art{background:linear-gradient(135deg,#071747,#0758ed)}
+.video-art span,.video-art small{color:white}
+.demo-modal-box{max-height:min(88vh,780px);overflow:auto}
+.demo-modal-desc{margin-bottom:16px}
+.demo-preview{display:none}
+.demo-preview.active{display:block}
+.demo-modal-actions{display:flex;justify-content:flex-end;gap:10px;margin-top:18px;flex-wrap:wrap}
+.demo-modal-actions .btn{font-size:13px}
+.btn.light{background:#fff;border:1px solid var(--blue);color:var(--blue);box-shadow:none}
+.mock-browser{border:1px solid #d7e1f4;border-radius:12px;overflow:hidden;background:#f6f8fc}
+.mock-browser-top{height:35px;background:#e8edf6;display:flex;align-items:center;gap:6px;padding:0 11px;color:#62718d;font-size:10px}
+.mock-browser-top i{width:8px;height:8px;border-radius:50%;background:#9eabc2}
+.mock-browser-top span{margin-left:8px}
+.mock-site{padding:17px;background:#fff}
+.mock-site-nav{display:flex;justify-content:space-between;gap:8px;font-size:10px;color:#52617c;border-bottom:1px solid #e5ebf5;padding-bottom:12px}
+.mock-site-nav b{color:#0758ed}
+.mock-site-hero{margin:16px 0;padding:24px 16px;border-radius:10px;background:linear-gradient(120deg,#061b59,#0876ed);color:#fff}
+.mock-site-hero small{font-size:9px;letter-spacing:1px;color:#9eeaff}
+.mock-site-hero h3{font-size:23px;margin:8px 0}
+.mock-site-hero p{font-size:12px;line-height:1.5;max-width:400px}
+.mock-button{border:0;border-radius:20px;background:#fff;color:#0758ed;padding:9px 13px;font-weight:700;font-size:11px;cursor:pointer}
+.mock-site-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.mock-site-cards span{padding:14px 6px;background:#eef4ff;border-radius:8px;text-align:center;font-size:11px;font-weight:700;color:#23416e}
+.mock-dashboard{display:grid;grid-template-columns:110px 1fr;min-height:260px;border:1px solid #dce5f5;border-radius:12px;overflow:hidden;background:#f7f9fd}
+.mock-dashboard aside{background:#071747;color:#fff;padding:15px 10px;display:flex;flex-direction:column;gap:16px;font-size:10px}
+.mock-dashboard aside b{font-size:16px;color:#5acaff;margin-bottom:8px}
+.mock-dash-main{padding:17px;min-width:0}
+.mock-dash-main>p{font-size:11px;color:var(--muted);margin:5px 0 13px}
+.mock-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:7px}
+.mock-stats div{background:#fff;border:1px solid #e2e9f5;border-radius:8px;padding:10px 7px}
+.mock-stats small,.mock-stats strong{display:block}
+.mock-stats small{font-size:9px;color:var(--muted)}
+.mock-stats strong{font-size:19px;margin-top:5px;color:#0758ed}
+.mock-bars{height:90px;display:flex;align-items:end;gap:9px;padding:10px 13px 0;background:#fff;border-radius:8px;margin:12px 0 6px}
+.mock-bars i{flex:1;max-width:35px;background:linear-gradient(#12b7f4,#0758ed);border-radius:5px 5px 0 0}
+.mock-dash-main>small{font-size:9px;color:var(--muted)}
+.mock-form{max-width:480px;margin:auto;padding:18px;background:#f7f9fd;border:1px solid #e1e8f4;border-radius:12px}
+.mock-form h3{margin:0 0 5px}.mock-form>p{font-size:12px;color:var(--muted)}
+.mock-form label{display:block;font-size:12px;font-weight:700;margin:12px 0}
+.mock-form input,.mock-form select,.mock-form textarea{display:block;width:100%;margin-top:5px;padding:10px;border:1px solid #d4deef;border-radius:8px;font:inherit;font-size:13px;background:#fff}
+.mock-form .btn{width:100%}.mock-success{color:#087b4b;font-weight:700}
+.mock-phone{width:210px;min-height:350px;margin:auto;padding:12px;border:7px solid #17284d;border-radius:28px;background:#f5f8ff;box-shadow:0 12px 28px #061b5920}
+.mock-phone-top{text-align:right;font-size:10px;color:#52617c}
+.mock-mobile-brand{margin:19px 5px;color:#0758ed;font-size:12px;font-weight:800}
+.mock-mobile-welcome{padding:17px;background:linear-gradient(135deg,#061b59,#0876ed);border-radius:12px;color:#fff;font-size:12px;line-height:1.6}
+.mock-mobile-welcome b{font-size:18px}
+.mock-mobile-tile{background:#fff;border:1px solid #e0e8f5;padding:13px;margin-top:10px;border-radius:9px;font-size:12px;font-weight:700;color:#253d68}
+.mock-mobile-nav{margin-top:18px;padding:12px;text-align:center;background:#fff;border-radius:10px;color:#0758ed}
+@media(max-width:980px){.nav{gap:12px}.brand{font-size:21px}.links{gap:12px;font-size:12px}.nav-actions .btn{padding:10px 13px;font-size:12px}}
+@media(max-width:820px){header{height:64px}.nav{min-height:64px}.links{display:none}.menu{display:block}.links.open{display:flex;position:absolute;top:64px;left:3%;right:3%;background:#fff;padding:16px;flex-direction:column;align-items:stretch;gap:0;box-shadow:0 10px 24px #061b5920;border:1px solid var(--line);border-radius:0 0 14px 14px}.links.open a{padding:12px 8px;border-bottom:1px solid #edf1f8;font-size:14px}.links.open a:last-child{border-bottom:0}}
+@media(max-width:650px){.nav-actions .btn{padding:9px 11px;font-size:11px}.brand{font-size:18px}.brand small{font-size:9px}.logo{width:36px;height:36px}.pricing{grid-template-columns:1fr}.price-card{padding:20px}.demo-tabs{justify-content:flex-start;overflow-x:auto;flex-wrap:nowrap;padding-bottom:5px}.demo-tab{white-space:nowrap}.demo-card{display:flex;flex-direction:column}.demo-art{min-height:110px}.demo-content{padding:14px}.demo-modal-box{padding:20px}.demo-modal-actions{flex-direction:column}.demo-modal-actions .btn{width:100%}.mock-site-nav span{display:none}.mock-dashboard{grid-template-columns:78px 1fr}.mock-dashboard aside{font-size:9px;padding:12px 7px}.mock-stats{gap:4px}.mock-stats div{padding:8px 5px}.mock-stats small{font-size:8px}.mock-stats strong{font-size:16px}.pricing-note{font-size:12px}.amount-label{font-size:19px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+
+
+/* AGUZ TECH — visual refinement: premium, calm, and mobile-first */
+:root{
+  --navy:#081b50;--blue:#1767e8;--cyan:#27b9ee;--ink:#10234f;--muted:#64728d;
+  --pale:#f4f7fd;--line:#e1e8f4;--green:#08ad70;
+  --shadow-soft:0 14px 38px rgba(12,35,82,.08);
+}
+body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Arial,sans-serif;background:#f5f7fc;color:var(--ink);-webkit-font-smoothing:antialiased}
+.wrap{width:min(1240px,92%)}
+header{backdrop-filter:blur(14px);background:rgba(255,255,255,.94);box-shadow:0 4px 24px rgba(9,29,75,.06)}
+.brand{letter-spacing:-.45px}.brand small{color:#6d7b95;letter-spacing:0}
+.btn{border-radius:14px;padding:13px 21px;transition:transform .2s ease,box-shadow .2s ease,filter .2s ease;box-shadow:0 8px 20px rgba(23,103,232,.16)}
+.btn:hover{transform:translateY(-2px);filter:saturate(1.08);box-shadow:0 12px 25px rgba(23,103,232,.2)}
+.btn.green{background:linear-gradient(110deg,#0cbd83,#079b70);box-shadow:0 8px 20px rgba(8,173,112,.18)}
+.hero{background:radial-gradient(ellipse at 76% 38%,#1478e9 0,#0a438f 38%,#081b50 78%)}
+.hero-inner{padding-top:42px;padding-bottom:42px;min-height:340px}
+.hero h1{letter-spacing:-1.7px;line-height:1.12}.hero p{color:#e2ebff;line-height:1.65}
+.services,.price-card,.general-card,.process-card,.demo-card{box-shadow:var(--shadow-soft);border-color:#e7edf7}
+.services{border-radius:20px;padding:20px 10px}.service{color:#1c315b}
+.section-head h2,.demo-intro h2{letter-spacing:-.7px;color:#10234f}
+.price-card,.process-card,.demo-card{border-radius:20px;transition:transform .22s ease,box-shadow .22s ease}
+.price-card:hover,.process-card:hover,.demo-card:hover{transform:translateY(-3px);box-shadow:0 18px 40px rgba(12,35,82,.11)}
+.price-card{padding:24px}.price-card.popular{border:1.5px solid #347cf0;box-shadow:0 14px 32px rgba(23,103,232,.1)}
+.demo-section{padding:10px 0 4px}.demo-intro{margin-bottom:24px}.demo-intro p{max-width:720px;margin:0 auto;line-height:1.75}
+.demo-tab{padding:10px 17px;border-color:#dfe7f3;transition:all .2s ease}.demo-tab.active{box-shadow:0 7px 16px rgba(23,103,232,.2)}
+.demo-art{min-height:150px;background:radial-gradient(circle at 50% 20%,#fff 0,#eaf2ff 54%,#dceaff 100%)}
+.demo-content{padding:19px}.demo-content h3{letter-spacing:-.25px}.demo-content p{line-height:1.65}
+.demo-note{background:#f0f5ff;border-color:#e0e9f8;border-radius:14px}
+footer{background:linear-gradient(145deg,#071640,#0b245d);padding:38px 0 20px}.footer-inner{gap:22px}.footer-links{gap:13px 28px}.copyright{border-color:#294477}
+/* Modal demo: spacious on desktop, contained and scrollable on mobile */
+.modal{padding:clamp(10px,3vw,28px);background:rgba(5,17,48,.72);backdrop-filter:blur(7px);-webkit-backdrop-filter:blur(7px);overscroll-behavior:contain}
+.demo-modal-box{width:min(760px,100%);max-height:min(88vh,88dvh,860px);overflow-y:auto;overscroll-behavior:contain;padding:clamp(20px,3.2vw,34px);border:1px solid rgba(255,255,255,.85);border-radius:26px;box-shadow:0 28px 90px rgba(0,13,48,.28);scrollbar-width:thin;scrollbar-color:#c6d5ed transparent}
+.demo-modal-box .eyebrow{padding:7px 15px;font-size:12px;letter-spacing:.2px;background:linear-gradient(100deg,#168cf2,#1761e7);box-shadow:0 5px 14px rgba(23,103,232,.16)}
+.demo-modal-box h2{font-size:clamp(23px,3.4vw,32px);line-height:1.18;letter-spacing:-.8px;margin:12px 42px 8px 0;color:#10234f}
+.demo-modal-desc{font-size:15px!important;line-height:1.65;margin:0 0 20px;color:#65738d!important;max-width:620px}
+.demo-modal-box .close{position:sticky;float:right;top:0;right:0;z-index:3;margin:-4px -4px 0 12px;width:38px;height:38px;border-radius:50%;background:#f0f4fb;color:#263a60;font-size:25px;line-height:1;display:grid;place-items:center;transition:background .2s ease,transform .2s ease}
+.demo-modal-box .close:hover{background:#e2ebfa;transform:rotate(90deg)}
+.demo-preview{border:1px solid #e1e9f5;border-radius:18px;overflow:hidden;background:#fff;box-shadow:0 10px 28px rgba(14,39,85,.07)}
+.demo-preview.active{animation:previewIn .28s ease both}
+@keyframes previewIn{from{opacity:0;transform:translateY(7px)}to{opacity:1;transform:translateY(0)}}
+.demo-modal-actions{display:grid;grid-template-columns:.8fr 1.2fr;gap:12px;margin-top:20px}
+.demo-modal-actions .btn{min-height:52px;border-radius:14px;font-size:14px}
+.demo-modal-actions .btn.light{background:#fff;border:1px solid #cbd9ef;color:#2457a5}
+.mock-browser{border:0;border-radius:0;background:#f6f8fc}
+.mock-browser-top{height:42px;padding:0 16px;background:#edf2fa;border-bottom:1px solid #e1e8f4;font-size:11px}
+.mock-browser-top i{width:9px;height:9px}
+.mock-site{padding:clamp(15px,3vw,28px);background:#fff}
+.mock-site-nav{font-size:11px;padding-bottom:15px;color:#52627d}
+.mock-site-nav b{font-size:13px;letter-spacing:.4px}
+.mock-site-hero{margin:20px 0;padding:clamp(22px,4vw,38px);border-radius:16px;background:linear-gradient(125deg,#09275f 0%,#0755ba 58%,#1485ed 100%);box-shadow:0 12px 26px rgba(7,62,145,.16)}
+.mock-site-hero small{font-size:10px;letter-spacing:1.4px;color:#bceeff;font-weight:800}
+.mock-site-hero h3{font-size:clamp(22px,4vw,32px);line-height:1.15;letter-spacing:-.7px;margin:12px 0;color:#fff}
+.mock-site-hero p{font-size:14px;line-height:1.7;max-width:480px;color:#eaf4ff!important;margin:0 0 18px}
+.mock-button{padding:11px 17px;border-radius:11px;font-size:12px;box-shadow:0 5px 14px rgba(0,0,0,.1)}
+.mock-site-cards{gap:10px}.mock-site-cards span{padding:16px 8px;border:1px solid #e7edf7;background:#f5f8fe;border-radius:12px;font-size:12px;color:#29446f}
+.mock-dashboard{grid-template-columns:clamp(90px,19%,145px) minmax(0,1fr);min-height:300px;border:0;border-radius:0;background:#f6f8fc}
+.mock-dashboard aside{padding:20px 14px;gap:19px;font-size:11px;background:linear-gradient(180deg,#0a1c50,#102e70)}
+.mock-dashboard aside b{font-size:19px;letter-spacing:.5px}
+.mock-dash-main{padding:clamp(15px,3vw,25px)}
+.mock-dash-main>b{font-size:19px;color:#142953}
+.mock-dash-main>p{font-size:12px;line-height:1.5;margin:7px 0 16px}
+.mock-stats{gap:10px}.mock-stats div{padding:13px 10px;border-radius:12px;box-shadow:0 3px 10px rgba(17,42,86,.04)}
+.mock-stats small{font-size:10px}.mock-stats strong{font-size:clamp(17px,3vw,23px)}
+.mock-bars{height:112px;gap:clamp(6px,2vw,13px);padding:12px 15px 0;border:1px solid #edf1f7;margin:15px 0 8px}
+.mock-dash-main>small{font-size:10px}
+.mock-form{max-width:560px;padding:clamp(18px,3vw,28px);border:0;background:#fff;border-radius:0}
+.mock-form h3{font-size:20px;color:#142953}.mock-form>p{line-height:1.5}
+.mock-form label{font-size:13px;color:#24395f}.mock-form input,.mock-form select,.mock-form textarea{padding:12px 13px;border-radius:10px;border-color:#dce5f2}
+.mock-form .btn{border-radius:11px;padding:13px}
+.mock-phone{margin:20px auto;width:min(230px,85%);min-height:370px;border:7px solid #182b50;border-radius:30px;padding:14px;box-shadow:0 18px 38px rgba(9,28,67,.16)}
+.mock-mobile-welcome{padding:20px;background:linear-gradient(135deg,#09275f,#147ce6);border-radius:15px}
+.mock-mobile-tile{padding:14px;border-radius:12px;border-color:#e7edf7;box-shadow:0 4px 10px rgba(15,39,83,.04)}
+.mock-mobile-nav{border:1px solid #e7edf7;border-radius:12px}
+body.modal-open{overflow:hidden}
+@media(max-width:820px){.hero-inner{min-height:0}.hero-points{display:none}}
+@media(max-width:650px){
+  .wrap{width:min(100% - 30px,560px)}
+  .hero-inner{padding:28px 0 22px}.hero h1{font-size:clamp(29px,8vw,36px)}
+  .services{border-radius:16px;padding:14px 5px}.service{padding:7px 5px}
+  .demo-grid{grid-template-columns:1fr}.demo-card{display:grid;grid-template-columns:105px minmax(0,1fr)}
+  .demo-art{min-height:100%;padding:10px}.demo-art span{font-size:38px}.demo-art small{font-size:8px;text-align:center}
+  .demo-content{padding:13px}.demo-content .btn{width:100%;white-space:normal;line-height:1.25}
+  .modal{padding:10px;align-items:center}
+  .demo-modal-box{width:100%;max-height:88vh;max-height:88dvh;padding:19px 16px 17px;border-radius:22px}
+  .demo-modal-box h2{font-size:24px;margin-top:10px;margin-right:35px}
+  .demo-modal-desc{font-size:14px!important;margin-bottom:15px}
+  .demo-modal-box .close{width:34px;height:34px;margin:-2px -2px 0 8px;font-size:23px}
+  .demo-modal-actions{grid-template-columns:1fr;gap:9px;margin-top:15px}
+  .demo-modal-actions .btn{min-height:48px;width:100%;padding:12px}
+  .mock-site{padding:13px}.mock-site-hero{margin:14px 0;padding:22px 16px}.mock-site-hero h3{font-size:23px}.mock-site-hero p{font-size:12px}
+  .mock-site-cards{gap:6px}.mock-site-cards span{font-size:10px;padding:12px 4px}
+  .mock-dashboard{grid-template-columns:76px minmax(0,1fr);min-height:255px}
+  .mock-dashboard aside{padding:13px 8px;gap:15px;font-size:9px}.mock-dashboard aside b{font-size:15px}
+  .mock-dash-main{padding:13px 10px}.mock-dash-main>b{font-size:16px}.mock-dash-main>p{font-size:10px;margin-bottom:11px}
+  .mock-stats{gap:5px}.mock-stats div{padding:9px 5px}.mock-stats small{font-size:8px}.mock-stats strong{font-size:16px}
+  .mock-bars{height:85px;gap:6px;padding:9px 8px 0}.mock-dash-main>small{font-size:8px}
+  .mock-form{padding:17px 14px}.mock-form h3{font-size:18px}
+  .footer-links{gap:12px 17px}
+}
+@media(max-width:380px){.nav-actions .btn{font-size:10px;padding:9px}.brand{font-size:16px}.brand small{font-size:8px}.demo-card{grid-template-columns:92px minmax(0,1fr)}.demo-content{padding:11px}.demo-content h3{font-size:14px}.demo-content p{font-size:11px}.mock-dashboard{grid-template-columns:66px minmax(0,1fr)}.mock-dashboard aside{font-size:8px}.mock-stats small{font-size:7px}.mock-stats strong{font-size:14px}}
+
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+<a class="brand" href="#beranda"><span class="logo"></span><span>AGUZ TECH<small>Solusi Digital untuk Masa Depan</small></span></a>
+<nav class="links" id="navLinks" aria-label="Navigasi utama"><a href="#beranda">Beranda</a><a href="#layanan">Layanan</a><a href="#demo">Lihat Demo</a><a href="#harga">Harga</a><a href="#tentang-kami">Tentang Kami</a><a href="#kontak">Kontak</a></nav>
+<div class="nav-actions"><a class="btn green" href="https://wa.me/6285846155502?text=Halo%20AGUZ%20TECH%2C%20saya%20ingin%20konsultasi." target="_blank" rel="noopener">Chat WhatsApp</a></div><button class="menu" id="menuToggle" type="button" aria-label="Buka menu" aria-controls="navLinks" aria-expanded="false">☰</button>
+</div></header>
+<main>
+<section class="hero" id="beranda"><div class="wrap hero-inner">
+<div><h1>Punya Ide <span>Aplikasi?</span><br>Kami Bantu <span>Wujudkan</span><br>Menjadi <span>Solusi Digital.</span></h1><p>Pembuatan Website, Aplikasi Web dan APK Android untuk bisnis, pendidikan, dan kebutuhan Anda.</p><a class="btn" href="#harga">🚀 Pesan Sekarang →</a> <a class="btn outline" href="#demo">▷ Lihat Demo</a></div>
+<div class="hero-art"><div class="laptop"><div class="screen-top">△ AGUZ TECH <span style="float:right;font-size:10px">Beranda　 Layanan　 Kontak</span></div><div class="screen-title">Solusi Digital<br>untuk Semua</div><span class="screen-chip">Mulai Sekarang →</span></div><div class="phone">A</div></div>
+<div class="hero-points"><div><b>✓</b> Mudah Digunakan</div><div><b>✓</b> Harga Terjangkau</div><div><b>✓</b> Support Profesional</div><div><b>✓</b> Akses Sesuai Paket</div></div>
+</div></section>
+<div class="wrap services" id="layanan"><div class="service"><i>▣</i>Website<br>Profesional</div><div class="service"><i>♟</i>Aplikasi<br>Android (APK)</div><div class="service"><i>‹/›</i>Aplikasi Web<br>Berbasis Website</div><div class="service"><i>⚙</i>Sistem Manajemen<br>dan Administrasi</div><div class="service"><i>🛒</i>Aplikasi Bisnis<br>& UMKM</div><div class="service"><i>♧</i>Konsultasi<br>Gratis</div></div>
+<section class="wrap" id="harga">
+  <div class="section-head"><span class="eyebrow">Paket & Penawaran</span><h2>Solusi Digital Sesuai Kebutuhan Anda</h2><p>Biaya disusun berdasarkan fitur, ruang lingkup, dan tingkat pengerjaan.</p></div>
+  <div class="pricing">
+    <article class="price-card">
+      <div class="price-top"><div class="price-icon">🌐</div><div><h3>Website Profesional</h3><p>Untuk profil, informasi, dan promosi.</p></div></div>
+      <div class="amount amount-label">Penawaran khusus</div>
+      <ul class="checks"><li>Struktur halaman sesuai kebutuhan</li><li>Tampilan responsif untuk HP dan komputer</li><li>Formulir atau tombol kontak sesuai kebutuhan</li><li>Rincian domain dan hosting dibahas terpisah</li></ul>
+      <button class="btn light" type="button" onclick="order('Konsultasi Website Profesional')">Minta Estimasi →</button>
+    </article>
+    <article class="price-card popular">
+      <span class="popular-tag">Fleksibel</span>
+      <div class="price-top"><div class="price-icon">📊</div><div><h3>Aplikasi Web</h3><p>Untuk proses kerja dan pengelolaan data.</p></div></div>
+      <div class="amount amount-label">Sesuai fitur</div>
+      <ul class="checks"><li>Alur kerja dan fitur dirancang bersama</li><li>Dashboard dan pengelolaan data sesuai proyek</li><li>Hak akses pengguna dapat disesuaikan</li><li>Pengujian sebelum serah terima</li></ul>
+      <button class="btn" type="button" onclick="order('Konsultasi Aplikasi Berbasis Web')">Minta Estimasi →</button>
+    </article>
+    <article class="price-card">
+      <div class="price-top"><div class="price-icon">📱</div><div><h3>APK & Sistem Custom</h3><p>Solusi khusus untuk kebutuhan tertentu.</p></div></div>
+      <div class="amount amount-label">Dibuat khusus</div>
+      <ul class="checks"><li>Kebutuhan dan spesifikasi dibahas lebih dahulu</li><li>Rancangan fitur mengikuti tujuan penggunaan</li><li>Estimasi waktu dan biaya sebelum mulai</li><li>Ketentuan dukungan disepakati di awal</li></ul>
+      <button class="btn light" type="button" onclick="order('Konsultasi APK atau Sistem Custom')">Konsultasi Proyek →</button>
+    </article>
+  </div>
+  <p class="pricing-note">Setiap proyek memiliki kebutuhan berbeda. AGUZ TECH akan membahas ruang lingkup, fitur, waktu pengerjaan, biaya, serta kebutuhan domain/hosting (jika ada) sebelum pekerjaan disepakati. Tidak ada biaya yang ditetapkan tanpa konfirmasi penawaran.</p>
+</section>
+<section class="wrap demo-section" id="demo">
+  <div class="demo-intro"><span class="eyebrow">Galeri Demo</span><h2>Jelajahi Contoh Solusi Digital AGUZ TECH</h2><p>Kenali contoh tampilan, coba simulasi sederhana, dan lihat video demonstrasi saat tersedia. Ini adalah contoh konsep untuk menunjukkan kemungkinan solusi—bukan batasan jenis layanan.</p></div>
+  <div class="demo-tabs" role="group" aria-label="Jenis galeri demo"><button class="demo-tab active" type="button" data-demo-filter="all">Semua</button><button class="demo-tab" type="button" data-demo-filter="preview">Contoh Tampilan</button><button class="demo-tab" type="button" data-demo-filter="interactive">Simulasi Interaktif</button><button class="demo-tab" type="button" data-demo-filter="video">Video</button></div>
+  <div class="demo-grid">
+    <article class="demo-card" data-demo-type="preview"><div class="demo-art"><span>🌐</span><small>CONTOH TAMPILAN</small></div><div class="demo-content"><h3>Website Profesional</h3><p>Contoh halaman profil usaha, organisasi, sekolah, komunitas, atau perusahaan.</p><button class="btn" type="button" onclick="openDemo('website')">Lihat Preview →</button></div></article>
+    <article class="demo-card" data-demo-type="interactive"><div class="demo-art"><span>📊</span><small>SIMULASI INTERAKTIF</small></div><div class="demo-content"><h3>Dashboard Aplikasi Web</h3><p>Contoh ringkasan data dan panel pengelolaan dalam aplikasi berbasis browser.</p><button class="btn" type="button" onclick="openDemo('dashboard')">Coba Simulasi →</button></div></article>
+    <article class="demo-card" data-demo-type="interactive"><div class="demo-art"><span>🗓️</span><small>SIMULASI INTERAKTIF</small></div><div class="demo-content"><h3>Form Pemesanan</h3><p>Contoh alur pengisian formulir digital untuk permintaan layanan atau pendaftaran.</p><button class="btn" type="button" onclick="openDemo('booking')">Coba Simulasi →</button></div></article>
+    <article class="demo-card" data-demo-type="preview"><div class="demo-art"><span>📱</span><small>CONTOH TAMPILAN</small></div><div class="demo-content"><h3>Konsep Aplikasi Android</h3><p>Contoh rancangan antarmuka aplikasi mobile yang dapat disesuaikan dengan kebutuhan.</p><button class="btn" type="button" onclick="openDemo('mobile')">Lihat Preview →</button></div></article>
+    <article class="demo-card" data-demo-type="video"><div class="demo-art video-art"><span>▶</span><small>VIDEO DEMONSTRASI</small></div><div class="demo-content"><h3>Video Pengenalan & Demo</h3><p>Ruang untuk video penjelasan fitur dan alur penggunaan. Video akan ditampilkan setelah materi resmi tersedia.</p><button class="btn" type="button" onclick="order('Permintaan video demonstrasi AGUZ TECH')">Minta Informasi Video →</button></div></article>
+    <article class="demo-card" data-demo-type="preview"><div class="demo-art"><span>🧩</span><small>CONTOH KONSEP</small></div><div class="demo-content"><h3>Sistem Custom</h3><p>Contoh solusi yang dirancang berdasarkan alur kerja dan tujuan khusus pelanggan.</p><button class="btn" type="button" onclick="order('Konsultasi contoh Sistem Custom')">Diskusikan Ide →</button></div></article>
+  </div>
+  <div class="demo-note">Simulasi di halaman ini merupakan contoh sederhana untuk melihat cara interaksi. Fitur, desain, keamanan, dan integrasi aplikasi produksi akan ditentukan berdasarkan kebutuhan proyek.</div>
+</section>
+
+<section class="wrap" id="tentang-kami" style="margin:28px auto 30px">
+  <div style="background:#fff;border:1px solid var(--line);border-radius:18px;padding:24px;box-shadow:0 5px 16px #173d8c0d">
+    <span class="eyebrow">Tentang Kami</span>
+    <h2 style="font-size:25px;margin:12px 0 10px">Mengenal AGUZ TECH</h2>
+    <p style="color:var(--muted);line-height:1.75;margin:0 0 12px">
+      AGUZ TECH adalah layanan solusi digital yang membantu individu, UMKM, sekolah, koperasi,
+      organisasi, dan perusahaan mewujudkan kebutuhan teknologi mereka. Kami melayani pembuatan
+      website profesional, aplikasi berbasis web, aplikasi Android (APK), serta sistem manajemen
+      dan administrasi sesuai kebutuhan pelanggan.
+    </p>
+    <p style="color:var(--muted);line-height:1.75;margin:0 0 12px">
+      Kami percaya setiap ide dapat dikembangkan menjadi solusi digital yang bermanfaat.
+      Karena itu, setiap calon pelanggan dapat menyampaikan ide, kebutuhan fitur, dan rencana
+      penggunaan aplikasi untuk dibahas bersama sebelum pengerjaan dimulai.
+    </p>
+    <p style="color:var(--muted);line-height:1.75;margin:0">
+      Komitmen AGUZ TECH adalah memberikan komunikasi yang jelas, pilihan layanan yang fleksibel,
+      dan solusi yang disesuaikan dengan kebutuhan serta anggaran pelanggan.
+    </p>
+    <div style="margin-top:18px;display:flex;flex-wrap:wrap;gap:12px;align-items:center">
+      <a class="btn green" href="https://wa.me/6285846155502" target="_blank" rel="noopener">Hubungi AGUZ TECH</a>
+      <strong style="font-size:15px;color:var(--ink)">WhatsApp: 0858-4615-5502</strong>
+    </div>
+  </div>
+</section>
+</main>
+<footer id="kontak"><div class="wrap footer-inner">
+  <div class="footer-brand"><span class="logo"></span><span>AGUZ TECH<small style="display:block;font-size:11px;font-weight:400">Solusi Digital untuk Masa Depan</small></span></div>
+  <nav class="footer-links" aria-label="Navigasi footer"><a href="#beranda">Beranda</a><a href="#layanan">Katalog Aplikasi</a><a href="#demo">Lihat Demo</a><a href="#harga">Harga</a><a href="#tentang-kami">Tentang Kami</a><a href="#kontak">Kontak</a></nav>
+  <div class="social"><span class="wa-number">WhatsApp: 0858-4615-5502</span><a class="btn green" href="https://wa.me/6285846155502?text=Halo%20AGUZ%20TECH%2C%20saya%20ingin%20konsultasi." target="_blank" rel="noopener">◉ Chat WhatsApp</a></div>
+</div><div class="wrap copyright">© <span id="copyrightYear">2026</span> AGUZ TECH. All Rights Reserved.</div></footer>
+<div class="modal" id="demoModal" role="dialog" aria-modal="true" aria-labelledby="demoModalTitle"><div class="modal-box demo-modal-box"><button class="close" type="button" onclick="closeDemo()" aria-label="Tutup preview">×</button><span class="eyebrow">Preview Konsep</span><h2 id="demoModalTitle">Contoh Demo</h2><p class="demo-modal-desc">Ini adalah simulasi antarmuka untuk memberi gambaran awal.</p>
+  <div class="demo-preview" id="previewWebsite"><div class="mock-browser"><div class="mock-browser-top"><i></i><i></i><i></i><span>contoh-website.aguztech</span></div><div class="mock-site"><div class="mock-site-nav"><b>BRAND ANDA</b><span>Beranda　 Profil　 Layanan　 Kontak</span></div><div class="mock-site-hero"><small>SELAMAT DATANG</small><h3>Bangun Identitas Digital Anda</h3><p>Website profesional yang dirancang mengikuti kebutuhan bisnis atau organisasi.</p><button type="button" class="mock-button" onclick="order('Pembuatan website seperti preview')">Konsultasi Website</button></div><div class="mock-site-cards"><span>Profil</span><span>Layanan</span><span>Informasi</span></div></div></div></div>
+  <div class="demo-preview" id="previewDashboard"><div class="mock-dashboard"><aside><b>APP</b><span>Ringkasan</span><span>Data</span><span>Laporan</span><span>Pengaturan</span></aside><div class="mock-dash-main"><b>Dashboard</b><p>Contoh ringkasan informasi</p><div class="mock-stats"><div><small>Total Data</small><strong>128</strong></div><div><small>Diproses</small><strong>24</strong></div><div><small>Selesai</small><strong>104</strong></div></div><div class="mock-bars"><i style="height:35%"></i><i style="height:62%"></i><i style="height:48%"></i><i style="height:85%"></i><i style="height:68%"></i><i style="height:100%"></i></div><small>Grafik ilustrasi — data contoh</small></div></div></div>
+  <div class="demo-preview" id="previewBooking"><form class="mock-form" id="mockBookingForm"><h3>Formulir Permintaan Layanan</h3><p>Simulasi pengisian formulir contoh.</p><label>Nama<input required maxlength="60" placeholder="Nama Anda"></label><label>Jenis layanan<select required><option value="">Pilih layanan</option><option>Website</option><option>Aplikasi Web</option><option>Aplikasi Android</option><option>Lainnya</option></select></label><label>Catatan<textarea rows="3" placeholder="Ceritakan kebutuhan Anda"></textarea></label><button class="btn" type="submit">Kirim Simulasi</button><p class="mock-success" id="mockBookingSuccess" role="status"></p></form></div>
+  <div class="demo-preview" id="previewMobile"><div class="mock-phone"><div class="mock-phone-top">● 9:41</div><div class="mock-mobile-brand">APP ANDA</div><div class="mock-mobile-welcome">Halo!<br><b>Selamat datang</b></div><div class="mock-mobile-tile">▦　Menu Utama</div><div class="mock-mobile-tile">▤　Aktivitas</div><div class="mock-mobile-tile">◷　Riwayat</div><div class="mock-mobile-nav">⌂　　 ◉　　 ♙</div></div></div>
+  <div class="demo-modal-actions"><button class="btn light" type="button" onclick="closeDemo()">Tutup</button><button class="btn green" type="button" onclick="order('Konsultasi berdasarkan preview demo')">Konsultasikan Ide →</button></div>
+</div></div>
+<div class="modal" id="orderModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><div class="modal-box"><button class="close" onclick="closeOrder()" aria-label="Tutup">×</button><h2 id="modalTitle">Form Pemesanan AGUZ TECH</h2><p>Isi kebutuhan Anda. Tim AGUZ TECH dapat menindaklanjuti permintaan ini.</p><form id="orderForm"><div class="field"><label>Nama</label><input id="custName" required autocomplete="name" maxlength="80" placeholder="Nama Anda"></div><div class="field"><label>Nomor WhatsApp</label><input id="custPhone" required inputmode="tel" autocomplete="tel" pattern="[0-9+() -]{8,20}" title="Masukkan nomor WhatsApp yang valid" placeholder="08xxxxxxxxxx"></div><div class="field"><label>Layanan yang diminati</label><input id="serviceName" required maxlength="120"></div><div class="field"><label>Ceritakan kebutuhan Anda</label><textarea id="custNote" maxlength="1200" placeholder="Ceritakan fitur atau kebutuhan yang Anda inginkan..."></textarea></div><button class="btn" type="submit">Kirim Permintaan</button></form><p style="font-size:11px">Permintaan akan diteruskan ke WhatsApp AGUZ TECH: 0858-4615-5502.</p></div></div>
+<script>
+const WHATSAPP_ADMIN = "6285846155502";
+document.getElementById('copyrightYear').textContent = new Date().getFullYear();
+const navLinks = document.getElementById('navLinks');
+const menuToggle = document.getElementById('menuToggle');
+function closeMenu(){navLinks.classList.remove('open');menuToggle.setAttribute('aria-expanded','false');menuToggle.setAttribute('aria-label','Buka menu');menuToggle.textContent='☰';}
+menuToggle.addEventListener('click',()=>{const opened=navLinks.classList.toggle('open');menuToggle.setAttribute('aria-expanded',String(opened));menuToggle.setAttribute('aria-label',opened?'Tutup menu':'Buka menu');menuToggle.textContent=opened?'×':'☰';});
+navLinks.querySelectorAll('a').forEach(link=>link.addEventListener('click',closeMenu));
+function order(service){closeMenu();closeDemo();document.getElementById('serviceName').value=service;document.getElementById('orderModal').classList.add('show');document.body.classList.add('modal-open');document.getElementById('custName').focus();}
+function closeOrder(){document.getElementById('orderModal').classList.remove('show');if(!demoModal.classList.contains('show'))document.body.classList.remove('modal-open');}
+const demoModal=document.getElementById('demoModal');
+function openDemo(type){
+  const map={website:['Website Profesional','previewWebsite'],dashboard:['Dashboard Aplikasi Web','previewDashboard'],booking:['Simulasi Form Pemesanan','previewBooking'],mobile:['Konsep Aplikasi Android','previewMobile']};
+  const item=map[type];if(!item)return;
+  document.getElementById('demoModalTitle').textContent=item[0];
+  document.querySelectorAll('.demo-preview').forEach(el=>el.classList.remove('active'));
+  document.getElementById(item[1]).classList.add('active');
+  demoModal.classList.add('show');
+  document.body.classList.add('modal-open');
+  document.querySelector('.demo-modal-box').scrollTop=0;
+}
+function closeDemo(){demoModal.classList.remove('show');if(!document.getElementById('orderModal').classList.contains('show'))document.body.classList.remove('modal-open');}
+document.querySelectorAll('.demo-tab').forEach(tab=>tab.addEventListener('click',()=>{
+  document.querySelectorAll('.demo-tab').forEach(t=>t.classList.remove('active'));
+  tab.classList.add('active');
+  const filter=tab.dataset.demoFilter;
+  document.querySelectorAll('.demo-card').forEach(card=>{card.hidden=filter!=='all'&&card.dataset.demoType!==filter;});
+}));
+document.getElementById('mockBookingForm').addEventListener('submit',e=>{e.preventDefault();document.getElementById('mockBookingSuccess').textContent='Simulasi berhasil! Data ini hanya contoh dan tidak dikirim atau disimpan.';});
+document.getElementById('orderModal').addEventListener('click',e=>{if(e.target.id==='orderModal')closeOrder();});
+demoModal.addEventListener('click',e=>{if(e.target===demoModal)closeDemo();});
+document.addEventListener('keydown',e=>{if(e.key==='Escape'){closeOrder();closeDemo();closeMenu();}});
+document.getElementById('orderForm').addEventListener('submit',e=>{
+  e.preventDefault();
+  const name=document.getElementById('custName').value.trim();
+  const phone=document.getElementById('custPhone').value.trim();
+  const service=document.getElementById('serviceName').value.trim();
+  const note=document.getElementById('custNote').value.trim()||'Belum ada catatan tambahan.';
+  const message=`Permintaan AGUZ TECH\nNama: ${name}\nWhatsApp pelanggan: ${phone}\nLayanan: ${service}\nKebutuhan: ${note}`;
+  const url=`https://wa.me/${WHATSAPP_ADMIN}?text=${encodeURIComponent(message)}`;
+  const opened=window.open(url,'_blank','noopener,noreferrer');
+  if(!opened){window.location.href=url;}
+  closeOrder();
+});
+</script>
+</body></html>
